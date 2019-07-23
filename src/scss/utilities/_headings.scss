@@ -1,0 +1,25 @@
+/*
+  Generate headlines <h1>...<h6>
+*/
+
+@each $name, $sizes in $headings {
+  #{$name}, .#{$name} {
+    @include ralewayBlack;
+    @include font-size(nth($sizes, 4));
+
+    @include mq($from: medium, $until: large) {
+      @include font-size(nth($sizes, 3));
+    }
+
+    @include mq($from: large, $until: xlarge) {
+      @include font-size(nth($sizes, 2));
+    }
+
+    @include mq($from: xlarge) {
+      @include font-size(nth($sizes, 1));
+    }
+
+    color: $blue;
+    margin: 0;
+  }
+}

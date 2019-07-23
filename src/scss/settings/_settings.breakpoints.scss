@@ -1,0 +1,21 @@
+/*
+  Sass MQ Breakpoints
+  https://github.com/sass-mq/sass-mq
+*/
+$mq-breakpoints: (
+  small: 375px,
+  medium: 768px,
+  large: 1280px,
+  xlarge: 1600px,
+);
+
+
+/*
+  BREAKPOINTS
+*/
+$mq-small: map-get($mq-breakpoints, "small");
+$mq-medium: map-get($mq-breakpoints, "medium");
+$mq-large: map-get($mq-breakpoints, "large");
+$mq-xlarge: map-get($mq-breakpoints, "xlarge");
+
+$portal-content-maxwidth: 1080px;

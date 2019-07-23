@@ -1,0 +1,14 @@
+{
+  "plugins": ["babel-plugin-cerebral"],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": true
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}

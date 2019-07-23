@@ -1,0 +1,57 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-family: $primary-font;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2em;
+}
+
+
+a {
+  color: $link;
+  transition: color 0.3s ease-in;
+
+  &:hover {
+    color: $linkHover;
+  }
+}
+
+div, a, input {
+  box-sizing: border-box;
+}
+
+li {
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+p {
+  @include font-size(16);
+    line-height: 1.5em;
+  @include mq($from: xlarge) {
+    @include font-size(18);
+  }
+
+  margin: 0;
+}
+
+img {
+  border : 0;
+}
+
+svg {
+  pointer-events: none;
+}
+
+.loading-indicator {
+  text-align: center;
+}

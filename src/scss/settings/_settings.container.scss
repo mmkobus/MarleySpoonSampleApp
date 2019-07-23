@@ -1,0 +1,18 @@
+/*
+  Container spacings related to the device width
+*/
+$container-spacing: (
+    small: 16px,
+    medium: 24px,
+    large: 32px,
+    xlarge: 40px
+);
+
+/*
+  Container widths for different content types
+*/
+$container-widths: (
+  small: 1080px,
+  medium: 1260px,
+  large: 1600px
+);

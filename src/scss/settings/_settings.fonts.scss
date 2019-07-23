@@ -1,0 +1,36 @@
+/*
+  import converted fonts
+*/
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+$body-size: 14px; // base for rem-calc (default is 16)
+$font-roboto: Roboto, Arial, sans-serif;
+$font-raleway: Raleway, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+
+$primary-font: $font-roboto;
+$secondary-font: $font-raleway;
+$header-font: $font-raleway;
+
+/*
+  Default font sizes (desktop, mobile)
+*/
+$font-sizes: (
+  96,
+  56,
+  48,
+  40,
+  32,
+  24,
+  20,
+  18,
+  16,
+  14,
+  12
+);
+
+/*
+  Default font colors
+*/
+$font-colors: (
+  blue: $blue,
+);

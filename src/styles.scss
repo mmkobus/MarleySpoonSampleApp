@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*
+  SETTINGS
+
+  Variables. Breakpoints, fonts, colors etc.
+*/
+@import 'scss/settings/**/*.scss';
+
+/*
+  VENDORS
+
+  Styles from 3rd party CSS / JS frameworks
+*/
+@import "node_modules/sass-mq/mq";
+
+/*
+  MIXINS
+
+  Mixins and functions
+*/
+@import 'scss/mixins/**/*.scss';
+
+/*
+  GENERIC
+
+  Reset and/or normalize styles, box-sizing definition, etc.
+*/
+@import 'scss/generic/normalize';
+@import 'scss/generic/generic';
+
+/*
+  UTILITIES
+
+  Helper classes
+*/
+@import 'scss/utilities/**/*.scss';
+
+/*
+  GLOBAL STYLES
+
+  Buttons, icons, form elements etc.
+*/
+@import 'scss/global/**/*.scss';
+
+/*
+  COMPONENTS
+
+  Specific component styles
+*/
+@import 'scss/components/recipes/**/*.scss';

@@ -1,0 +1,51 @@
+.item {
+  margin-top: rem(30);
+
+  &-hero {
+    width: 100%;
+    height: rem(200);
+    margin-bottom: rem(40);
+
+    @include mq(medium) {
+      height: rem(300);
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &-title {
+    @include font-size(24);
+
+    @include mq(medium) {
+      @include font-size(30);
+    }
+
+    @include mq(large) {
+      @include font-size(38);
+    }
+  }
+
+  &-chef, &-calories {
+    font-style: italic;
+    color: $gray;
+  }
+
+  &-desc {
+    margin: rem(10 0);
+    padding-top: rem(15);
+    border-top: 1px solid $mercury;
+  }
+
+  &-tags {
+    margin-top: rem(20);
+    padding-top: rem(15);
+    border-top: 1px solid $mercury;
+    span {
+      font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.back-btn {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: $link;
+  font-weight: bold;
+  transition: color 0.3s ease-in;
+
+  svg {
+    position: relative;
+    top: rem(2);
+    width: rem(15);
+    height: rem(15);
+    margin-right: rem(5);
+    fill: $link;
+    transition: fill 0.3s ease-in;
+  }
+
+  &:hover {
+    color: $linkHover;
+
+    svg {
+      fill: $linkHover;
+    }
+  }
+}

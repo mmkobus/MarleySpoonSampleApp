@@ -1,0 +1,13 @@
+.recipes {
+  max-width: rem(830);
+  margin: rem(40) auto rem(20);
+  padding: rem(0 15);
+
+  @include mq(large) {
+    max-width: rem(1080);
+  }
+
+  &-title {
+    margin: rem(0 15);
+  }
+}

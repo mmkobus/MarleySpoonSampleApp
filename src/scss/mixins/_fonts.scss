@@ -1,0 +1,51 @@
+@mixin robotoRegular {
+    font-family: $primary-font;
+}
+
+@mixin robotoBlack {
+  font-family: $primary-font;
+  @include font-weight(500);
+  @include font-style(normal);
+}
+
+@mixin robotoBold {
+  font-family: $primary-font;
+  @include font-weight(bold);
+  @include font-style(normal);
+}
+
+@mixin ralewayMed {
+  font-family: $secondary-font;
+  @include font-weight(700);
+  @include font-style(normal);
+}
+
+@mixin ralewayBlack {
+  font-family: $header-font;
+  @include font-weight(900);
+  @include font-style(normal);
+}
+
+@mixin font-size($size, $line-height: auto) {
+  font-size: rem($size);
+
+  @if ($line-height != 'auto') {
+    line-height: rem($line-height);
+  }
+}
+
+@mixin font-style($style) {
+  font-style: $style;
+
+  * {
+    font-style: $style; // set font weight also for child elements like <b> and <strong>
+  }
+}
+
+@mixin font-weight($weight) {
+  font-weight: $weight;
+
+  * {
+    font-weight: $weight; // set font weight also for child elements like <b> and <strong>
+  }
+}

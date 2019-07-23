@@ -1,0 +1,10 @@
+.not-found {
+  max-width: rem(400);
+  margin: rem(40) auto;
+  text-align: center;
+
+  h1 {
+    margin-bottom: rem(30);
+    @include font-size(60);
+  }
+}

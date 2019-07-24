@@ -1,6 +1,5 @@
 /* eslint import/no-nodejs-modules: ["error", {"allow": ["path"]}] */
 import path from 'path';
-import environments from './configurations';
 
 const env = process.env.NODE_ENV || 'development';
 const reactEnv = process.env.REACT_APP_SETTING || 'development';
